@@ -1,0 +1,48 @@
+*{
+    background-color: rgb(222, 223, 224);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    color: rgb(66, 66, 66);
+}
+video{
+    border-radius: 2%;
+    width: 700px;
+    align-content: center;
+    margin-top: 20px;
+}
+.video{
+    display:block;
+    text-align:center;
+}
+.about h1{
+    text-align: center;
+}
+.about p{
+    max-width: 800px;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 1.5;   
+    margin: auto;
+    width: 50%; 
+}
+header h1{
+    text-align: center;
+}
+header nav{
+    text-align: center;
+}
+
+@media (max-width: 700px)
+{
+    video{
+        width: 350px;
+    }
+    .about p{
+        width:70%
+    }
+}

@@ -1,0 +1,11 @@
+var num1=5;
+var num2=6;
+console.log(5 && 6);
+console.log(5 || 6);
+console.log(1 + 1 == 2 && 10 * 10 > 50);
+var bool=num1<num2?true:false;
+var boolNaN=NaN>NaN?true:false;
+var boolInf=Infinity>Infinity?true:false;
+console.log(bool);
+console.log(boolNaN);
+console.log(boolInf);

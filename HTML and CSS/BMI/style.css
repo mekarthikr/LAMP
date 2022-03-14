@@ -1,0 +1,24 @@
+*{
+    background-color: rgb(190, 190, 190);
+}
+.box{
+    width: 400px;
+    height: 330px;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 20px;
+}
+.box h4{
+    font-size: 50px;
+}
+.box input{
+    width: 210px;
+    height: 40px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+}

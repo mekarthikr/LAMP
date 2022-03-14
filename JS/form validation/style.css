@@ -1,0 +1,53 @@
+h1{
+    margin-bottom: 40px;
+}
+body{
+    align-content: center;
+    text-align: center;  
+    margin: 3% 10%;  
+}
+form{
+    border: 4px black;
+    padding: 20px;
+}
+.container{
+    background-color: rgb(221, 226, 226);
+    align-content: center;
+    text-align: center;
+    margin: 5%;
+    padding: 5%;
+}
+.row{
+    margin: 1%;
+}
+.invalid_format{
+    color: red;
+    font-size: 12px;
+    margin-bottom:5px;
+}
+.submit_button{
+    background-color: #0452aa;
+    color: white;
+    border: none;    
+    width: 40%;
+    height: 25px;
+    margin-top: 10px;
+}
+.submit_button:hover{
+opacity: 0.7;
+}
+input[type=text]
+{
+    color: black;
+    text-align: center;
+}
+input[type=email]
+{
+    color: black;
+    text-align: center;
+}
+input[type=number]
+{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}

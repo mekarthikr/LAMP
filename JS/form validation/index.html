@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Registration Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form method="get" action="index.html" class="form" method="get">
+            <div class="row">
+                <label class="lable" for="">Fisrt Name</label>
+                <input class="input" type="text" id="firstName" placeholder="First Name" required>
+                <div class="invalid_format" id="fisrtNameError"></div>
+            </div>
+            <div class="row">
+                <label class="lable" for="">Last Name</label>
+                <input class="input" type="text" id="lastName" placeholder="Last Name" required>
+                <div class="invalid_format" id="lastNameError"></div>
+            </div> 
+            <div class="row">
+                <label class="lable" for="mail">Email</label>
+                <input class="input" type="email" id="mail" placeholder="Email" required>
+                <div class="invalid_format" id="emailError"></div>
+            </div> 
+            <div class="row">
+                <label class="lable" for="">Phone Number</label>
+                <input class="input" type="number" id="phoneNumber" placeholder="Phone Number" required>
+                <div class="invalid_format" id="phoneNumberError"></div>
+            </div>
+            <div class="row">
+                <label class="lable" for="">Company Name</label>
+                <input class="input" type="text" id="companyName" placeholder="Company Name" required>
+                <div class="invalid_format" id="companyNameError"></div>
+            </div> 
+            <div class="row">
+                <input class="input" type="checkbox" id="agreeT&C" required>
+                <label class="lable" for="">Agree for Terms and Conditions</label>
+            </div>
+            <div class="row">
+                <button class="submit_button" type="submit">Submit</button> 
+            </div>          
+        </form>
+        <script>
+            const firstname = document.getElementById("firstName");
+            const lastname = document.getElementById("lastName");
+            const mail = document.getElementById("mail");
+            const phoneNumber = document.getElementById("phoneNumber");
+            const companyName = document.getElementById("companyName");
+            firstname.addEventListener("blur", function (event) {
+            const regrex=/^[a-zA-Z\s]+$/;
+            const error = document.getElementById("fisrtNameError");
+            if(!regrex.test(firstname.value)){               
+               error.innerHTML="Enter valid name";
+            }
+            else{
+                error.innerHTML="";
+            }
+            });
+            lastname.addEventListener("blur", function (event) {
+            const regrex=/^[a-zA-Z\s]+$/;
+            const error = document.getElementById("lastNameError");
+            if(!regrex.test(lastname.value)){               
+               error.innerHTML="Enter valid name";
+            }
+            else{
+                error.innerHTML="";
+            }
+            });
+            phoneNumber.addEventListener("blur", function (event) {
+            const regrex=/^[0-9]{10}$/;
+            const error = document.getElementById("phoneNumberError");
+            if(!regrex.test(phoneNumber.value)){               
+               error.innerHTML="Enter valid Phone Number";
+            }
+            else{
+                error.innerHTML="";
+            }
+            });
+            mail.addEventListener("blur", function (event) {
+            const regrex=/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            const error = document.getElementById("emailError");
+            if(!regrex.test(mail.value)){               
+               error.innerHTML="Enter valid Email";
+            }
+            else{
+                error.innerHTML="";
+            }
+            });
+            companyName.addEventListener("blur", function (event) {
+            const regrex=/^[a-zA-Z\s]+$/;
+            const error = document.getElementById("companyNameError");
+            if(!regrex.test(companyName.value)){               
+               error.innerHTML="Enter valid company name";
+            }
+            else{
+                error.innerHTML="";
+            }
+            });           
+        </script>
+    </div>
+</body>
+</html>

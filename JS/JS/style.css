@@ -1,0 +1,44 @@
+*{
+    text-align: center;
+    align-content: center;
+}
+.textarea{
+    margin-top: 10px;
+    width: 200px;
+    height: 15px;
+    border: 2px solid black;
+    align-content: center;
+    background-color: white;
+    resize:none
+
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  .text{
+      height: 10px;
+      width: 100px;
+      border:5px solid black
+  }
+  .dd{
+    color: red;
+    font-size: 12px;
+    margin-bottom:5px;
+  }

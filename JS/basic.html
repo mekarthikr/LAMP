@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <button type="submit" name="submit" onclick="greatestNumber()"> IF-ELSE  </button>
+    <p>Factorial of 10</p>
+    <p id="fact"></p>
+    <button type="submit" name="submit" onclick="factorialOf10for()"> FOR </button>
+    <button type="submit" name="submit" onclick="factorialOf10while()"> WHILE  </button>
+    <button type="submit" name="submit" onclick="factorialOf10dowhile()"> DO-WHILE  </button>
+    <h4>Arithmatic oprations values: 12 & 6</h4>    
+    <p id="result"></p>
+    <button type="submit" name="submit" onclick="AP(1)"> +</button>
+    <button type="submit" name="submit" onclick="AP(2)"> -</button>
+    <button type="submit" name="submit" onclick="AP(3)"> *</button>
+    <button type="submit" name="submit" onclick="AP(4)"> /</button>
+    <button type="submit" name="submit" onclick="AP(5)"> %</button>
+</body>
+<script>
+    function greatestNumber()
+    {
+        var a,b;
+        a=10;
+        b=15;
+        if(a>b)
+        {
+            document.getElementById("demo").innerHTML=a;
+        }
+        else
+        {
+            document.getElementById("demo").innerHTML=b;
+        }
+    }
+    function factorialOf10for()
+    {
+        var a,fact=1;
+        for(a=1;a<=10;a++)
+        {
+           fact=fact*a;
+        }
+        document.getElementById("fact").innerHTML=fact;
+    }
+    function factorialOf10while()
+    {
+        var i=1,fact=1;    
+        while (i<=10)
+        {
+            fact=fact*i;
+            i++;;
+        }
+        document.getElementById("fact").innerHTML=fact;
+    }
+    function factorialOf10dowhile()
+    {
+        var i=1,fact=1;    
+        do
+        {
+            fact=fact*i;
+            i++;;
+        }while (i<=10)
+        document.getElementById("fact").innerHTML=fact;
+    }
+    function AP(o)
+    {
+        var a=12,b=6,result;
+        if(o==1)
+        {
+            result=a+b;
+            document.getElementById("result").innerHTML=result;
+        }
+        else if(o==2)
+        {
+            result=a-b;
+            document.getElementById("result").innerHTML=result;
+        }
+        else if(o==3)
+        {
+            result=a*b;
+            document.getElementById("result").innerHTML=result;
+        }
+        else if(o==4)
+        {
+            result=a/b;
+            document.getElementById("result").innerHTML=result;
+        }
+        else if(o==5)
+        {
+            result=a%b;
+            document.getElementById("result").innerHTML=result;
+        }
+    }
+</script>
+</html>
