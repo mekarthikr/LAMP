@@ -1,28 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>query selector</title>
 </head>
 <body>
-    <p>And if you go chasing
-        <span class="animal">rabbits</span></p>
-      <p>And you know you're going to fall</p>
-      <p>Tell 'em a <span class="character">hookah smoking
-        <span class="animal">caterpillar</span></span></p>
-      <p>Has given you the call</p>
-      
-      <script>
-        function count(selector) {
-          return document.querySelectorAll(selector).length;
-        }
-        console.log(count("p"));           
-        // → 4
-        console.log(count(".animal"));     
-        // → 2
-        console.log(count("p .animal"));   
-        // → 2
-        console.log(count("p > .animal")); 
-        // → 1
-      </script>
+    Name:<input type="text" id="nam" placeholder="name"><br>
+    Age:<input type="text" id="nam">
+
+     <script>
+        //  var gt  = document.querySelectorAll("input")[1];
+        //  gt.style.backgroundColor="red"
+        //  console.log(gt)
+       var A = document.getElementById("nam");
+       console.log(A)
+</script>
 </body>
 </html>
