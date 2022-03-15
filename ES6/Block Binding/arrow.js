@@ -6,4 +6,4 @@ console.log("square result = "+square(5));
 
 const sq = (num) => num*num; //concised way of coding 
 
-console.log("square result = "+square(5));
+console.log("square of the value is = "+square(5));
