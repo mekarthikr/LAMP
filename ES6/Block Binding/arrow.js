@@ -4,6 +4,6 @@ const square = function(num){ //traditional way
 
 console.log("square result = "+square(5));
 
-const square = (num) => num*num; //concised way of coding 
+const sq = (num) => num*num; //concised way of coding 
 
 console.log("square result = "+square(5));
