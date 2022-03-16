@@ -1,0 +1,18 @@
+let map = new Map();
+map.set("name", "Nicholas");
+map.set("age", 25);
+console.log(map.size);
+console.log(map.has("name"));
+console.log(map.get("name"));
+console.log(map.has("age"));
+console.log(map.get("age"));
+map.delete("name");
+console.log(map.has("name"));
+console.log(map.get("name"));
+console.log(map.size);
+map.clear();
+console.log(map.has("name"));
+console.log(map.get("name"));
+console.log(map.has("age"));
+console.log(map.get("age"));
+console.log(map.size);
