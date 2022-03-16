@@ -6,6 +6,6 @@ function map(){
     console.log(map);
     //var ralph={'name':'Ralph'};
     //map.set(ralph,29);
-   // console.log(map);
+    console.log(map);
 }
 map()
