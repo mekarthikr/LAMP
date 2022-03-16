@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event</title>
+</head>
+<body>
+    <p>Characters of Demon slayer</p>
+    <button>Click me</button>
+<p id="ptag">Click button</p>
+<script>
+  let button = document.querySelector("button");
+  button.addEventListener("click", () => {
+    console.log("Button clicked.");
+    let p=document.querySelector("p");
+    let random=Math.floor(Math.random() * 7);
+    let name=["Tanjiro","Akaza","Kokushibo","Nezuko","Zenitsu","Kokushibo","Yoriichi","Inosuke","Rengoku","Tengen"]
+    document.getElementById("ptag").innerHTML=name[random];
+  });
+</script>
+</body>
+</html>
