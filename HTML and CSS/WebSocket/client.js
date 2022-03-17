@@ -1,17 +1,12 @@
 const websocket = require('ws');
+const url = "ws://127.0.0.1:8090";
+const ws = new websocket(url);
 
-const wss = new websocket.Server({
-    port:8090
+ws.on('open',function () {
+    ws.send("hello server");
+    
 })
 
-// console.log("connection ready");
-
-wss.on('connection',function (socket) {
-    console.log("connection ready");
-
-    socket.on('message',function (msg) {
-        console.log("received by server : "+msg);
-        socket.send(msg);
-        socket.send("hi client");
-    })
+ws.on('message',function (msg) {
+    console.log("server: "+msg);
 })
