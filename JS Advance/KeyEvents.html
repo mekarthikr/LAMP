@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>This page turns violet when you hold the V or Q key.</p>
+        <script>
+        window.addEventListener("keydown", event => {
+            if (event.key == "v") {
+            document.body.style.background = "violet";
+            }
+        });
+        window.addEventListener("keydown", event => {
+            if (event.key == "q") {
+            document.body.style.background = "red";
+            }
+        });
+        window.addEventListener("keyup", event => {
+            if (event.key == "v"||event.key=="q") {
+            document.body.style.background = "";
+            }
+        });
+        </script>
+</body>
+</html>
