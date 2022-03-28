@@ -1,36 +1,36 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-    <title>Drag and Drop</title>
-<style>
-.div1 {
-  width: 350px;
-  height: 100px;
-  padding: 10px;
-  background-color: aqua;
-  border: 5px solid #000000;
-}
-</style>
-<script>
-function dragstart_handler(ev) {
-  ev.preventDefault();
-}
+  <head>
+      <title>Drag and Drop</title>
+    <style>
+      .div1 {
+        width: 350px;
+        height: 100px;
+        padding: 10px;
+        background-color: aqua;
+        border: 5px solid #000000;
+      }
+    </style>
+  <script>
+    function dragstart_handler(ev) {
+      ev.preventDefault();
+    }
 
-function dragover_handler(ev) {
-  ev.dataTransfer.setData("text", ev.target.id);
-}
+    function dragover_handler(ev) {
+      ev.dataTransfer.setData("img", ev.target.id);
+    }
 
-function drop_handler(ev) {
-  ev.preventDefault();
-  var data = ev.dataTransfer.getData("text");
-  ev.target.appendChild(document.getElementById(data));
-}
-</script>
-</head>
-<body>
-<div class="div1" ondrop="drop_handler(event)" ondragover="dragstart_handler(event)"></div>
-<br>
-<img id="drag1" src="images/drag.png" style="width: 100px;" draggable="true" ondragstart="dragover_handler(event)" width="336" height="69">
-</body>
+    function drop_handler(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("img");
+      ev.target.appendChild(document.getElementById(data));
+    }
+  </script>
+  </head>
+  <body>
+  <div class="div1" ondrop="drop_handler(event)" ondragover="dragstart_handler(event)"></div>
+  <br>
+  <img id="drag1" src="images/drag.png" style="width: 100px;" draggable="true" ondragstart="dragover_handler(event)" width="336" height="69">
+  </body>
 </html>
 
