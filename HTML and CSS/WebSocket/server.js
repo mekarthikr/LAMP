@@ -7,10 +7,10 @@ const wss = new websocket.Server({
 // console.log("connection ready");
 
 wss.on('connection',function (socket) {
-    console.log("connection ready");
+    console.log("connection is ready");
 
     socket.on('message',function (msg) {
-        console.log("Client : "+msg);
-        socket.send("hi client");
+        console.log("user says"+msg);
+        socket.send("Hi user");
     })
 })
