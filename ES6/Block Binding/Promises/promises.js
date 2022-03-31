@@ -2,9 +2,14 @@
 //Pending,Fulfilled,Rejected
 function promises(){
     var promise=new Promise(function(resolve,reject){
+        var fr=new FileReader('dummy.txt');
         resolve();
+        reject();
     });
-    promise.then(function(data){
+    promise.then(function(data="hello"){
+        console.log(data)
+    })
+    promise.then(function(data="reject"){
         console.log(data)
     })
 

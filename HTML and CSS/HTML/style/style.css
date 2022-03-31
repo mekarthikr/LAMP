@@ -26,6 +26,6 @@ footer{
 @media (max-width: 500px)
 {
     #col{
-        column-count: 1;
+        column-count: 2;
     }
 }
