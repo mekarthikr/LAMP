@@ -3,18 +3,22 @@ function carName(brand,model)
     this.brand=brand;
     this.model=model;
 }
-carName.prototype.year=2000;
-let car=new carName("bmw","x6")
-console.log(car.year)
+// carName.prototype.year=2000;
+// let car=new carName("bmw","x6")
+// console.log(car.year)
 
 
-function sum(num)
-{
-    return num+num
-}
-function lets(val,add){
-    let num=val;
-    return add(num)
-}
+// function sum(num)
+// {
+//     return num+num
+// }
+// function lets(val,add){
+//     let num=val;
+//     return add(num)
+// }
 
-console.log(lets(5,sum))
+// console.log(lets(5,sum))
+
+let car=new carName("BMW","x6")
+car.year=2000;
+console.log(car)
