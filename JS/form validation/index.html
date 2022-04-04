@@ -12,16 +12,36 @@
     <div class="container">
         <h1>Registration Form</h1>
         <form method="get" action="index.html" class="form" method="get">
-            <div class="row">
-                <label class="lable" for="firstName">Fisrt Name</label>
-                <input class="input" type="text" id="firstName" placeholder="First Name" required>
-                <div class="invalid_format" id="fisrtNameError"></div>
-            </div>
-            <div class="row">
-                <label class="lable" for="lastName">Last Name</label>
-                <input class="input" type="text" id="lastName" placeholder="Last Name" required>
-                <div class="invalid_format" id="lastNameError"></div>
-            </div> 
+            <table>
+                <tr>
+                    <div class="row">
+                        <td>
+                            <label class="lable" for="firstName">Fisrt Name</label>
+                        </td>
+                        <td>
+                            <input class="input" type="text" id="firstName" placeholder="First Name" required>
+                        </td>
+                        <td>
+                            <div class="invalid_format" id="fisrtNameError"></div>
+                        </td>                       
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <tr>
+                            <td>
+                                <label class="lable" for="lastName">Last Name</label>
+                            </td>
+                            <td>
+                                <input class="input" type="text" id="lastName" placeholder="Last Name" required>
+                            </td>
+                            <td>
+                                <div class="invalid_format" id="lastNameError"></div>
+                            </td>  
+                        </tr>                                              
+                    </div> 
+                </tr>
+            </table>
             <div class="row">
                 <label class="lable" for="mail">Email</label>
                 <input class="input" type="email" id="mail" placeholder="Email" required>
