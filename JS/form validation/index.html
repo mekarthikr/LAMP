@@ -20,10 +20,14 @@
                         </td>
                         <td>
                             <input class="input" type="text" id="firstName" placeholder="First Name" required>
-                        </td>
-                        <td>
-                            <div class="invalid_format" id="fisrtNameError"></div>
                         </td>                       
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td colspan="2">
+                            <div class="invalid_format" id="fisrtNameError"></div>
+                        </td>
                     </div>
                 </tr>
                 <tr>
@@ -35,35 +39,88 @@
                             <td>
                                 <input class="input" type="text" id="lastName" placeholder="Last Name" required>
                             </td>
-                            <td>
-                                <div class="invalid_format" id="lastNameError"></div>
-                            </td>  
                         </tr>                                              
                     </div> 
                 </tr>
-            </table>
-            <div class="row">
-                <label class="lable" for="mail">Email</label>
-                <input class="input" type="email" id="mail" placeholder="Email" required>
-                <div class="invalid_format" id="emailError"></div>
-            </div> 
-            <div class="row">
-                <label class="lable" for="phoneNumber">Phone Number</label>
-                <input class="input" type="number" id="phoneNumber" placeholder="Phone Number" required>
-                <div class="invalid_format" id="phoneNumberError"></div>
-            </div>
-            <div class="row">
-                <label class="lable" for="companyName">Company Name</label>
-                <input class="input" type="text" id="companyName" placeholder="Company Name" required>
-                <div class="invalid_format" id="companyNameError"></div>
-            </div> 
-            <div class="row">
-                <input class="input" type="checkbox" id="agreeT&C" required>
-                <label class="lable" for="agreeT&C">Agree for Terms and Conditions</label>
-            </div>
-            <div class="row">
-                <button class="submit_button" type="submit">Submit</button> 
-            </div>          
+                <tr>
+                    <div class="row">
+                        <td colspan="2">
+                            <div class="invalid_format" id="lastNameError"></div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td>
+                            <label class="lable" for="mail">Email</label>
+                        </td>
+                        <td>
+                            <input class="input" type="email" id="mail" placeholder="Email" required>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td colspan="2">
+                            <div class="invalid_format" id="emailError"></div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td>
+                            <label class="lable" for="phoneNumber">Phone Number</label>
+                        </td>
+                        <td>
+                            <input class="input" type="number" id="phoneNumber" placeholder="Phone Number" required>
+                        </td> 
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td colspan="2">
+                            <div class="invalid_format" id="phoneNumberError"></div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td>
+                            <label class="lable" for="companyName">Company Name</label>
+                        </td>
+                        <td>
+                            <input class="input" type="text" id="companyName" placeholder="Company Name" required>
+                        </td>
+                    </div> 
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td colspan="2">
+                            <div class="invalid_format" id="companyNameError"></div>
+                        </td>
+                    </div>
+                </tr>
+                <tr>
+                    <div class="row">
+                        <td>
+                            <input class="input" type="checkbox" id="agreeT&C" required>
+                        </td>
+                       <td colspan="2">
+                        <label class="lable" for="agreeT&C">Agree for Terms and Conditions</label>
+                       </td>                      
+                    </div>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="row">
+                            <button class="submit_button" type="submit">Submit</button> 
+                        </div>
+                    </td>
+                </tr>
+            </table>       
+            
+            
+                      
         </form>
         <script>
             const firstname = document.getElementById("firstName");
